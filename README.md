@@ -1,4 +1,4 @@
-# 免费Clash SSR - 6月9日21.5M/S|免费SSR/Shadowrocket/V2ray/Clash节点订阅分享  更新时间 2025-06-09 23:31:20
+# 免费Clash SSR - 6月9日18.1M/S|免费SSR/Shadowrocket/V2ray/Clash节点订阅分享  更新时间 2025-06-09 23:38:00
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://clash-ssr.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
