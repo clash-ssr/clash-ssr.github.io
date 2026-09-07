@@ -136,9 +136,19 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 可以自定义路由规则吗？</h5></div>
+    <div class="panel-body">
+        支持。用户可通过界面或配置文件定义路由规则，按域名、IP 或端口匹配不同节点，实现流量分流。自定义规则增强了网络访问灵活性和安全性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 如何实现域名精确分流？</h5></div>
     <div class="panel-body">
         Sing-box 支持按域名匹配流量，将不同应用流量分配到指定节点。结合策略组使用，可自动选择最优节点，提高访问速度和网络稳定性，实现精确流量管理。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>ShadowsocksR 支持哪些混淆插件？</h5></div>
+    <div class="panel-body">
+        ShadowsocksR 提供多种混淆方式，如 tls1.2_ticket_auth、http_simple、random_head 等。它们通过模拟正常流量特征来规避防火墙检测，使通信更加隐蔽。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
@@ -146,34 +156,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + Reality 模式如何隐藏流量特征？</h5></div>
-    <div class="panel-body">
-        Reality 模式通过伪装握手和真实网站特征，使流量难以被 DPI 检测。结合策略组使用，可有效隐藏节点通信特征，同时保持安全和高速传输，适合高封锁环境。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 WebSocket + TLS 配置有哪些优势？</h5></div>
-    <div class="panel-body">
-        WebSocket + TLS 可以伪装成普通 HTTPS 流量，增强抗封锁能力。适合高封锁环境，结合域名伪装和策略组，可实现高安全性和稳定的网络访问体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 可以自定义路由规则吗？</h5></div>
-    <div class="panel-body">
-        支持。用户可通过界面或配置文件定义路由规则，按域名、IP 或端口匹配不同节点，实现流量分流。自定义规则增强了网络访问灵活性和安全性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
-    <div class="panel-body">
-        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 节点测速结合策略组的作用？</h5></div>
     <div class="panel-body">
         Shadowrocket 定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证网页、视频和游戏流量走低延迟节点，提高访问速度和连接稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan-go 如何启用 WebSocket 支持？</h5></div>
+    <div class="panel-heading"><h5>VLESS + Reality 模式如何隐藏流量特征？</h5></div>
     <div class="panel-body">
-        在配置文件中将 transport 参数设置为 websocket，并指定 path 路径。客户端需同步使用相同路径及主机名。这样可将 Trojan 流量伪装为普通 WebSocket 通信以提升隐蔽性。<hr />    </div>
+        Reality 模式通过伪装握手和真实网站特征，使流量难以被 DPI 检测。结合策略组使用，可有效隐藏节点通信特征，同时保持安全和高速传输，适合高封锁环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 的安全性是否优于 Shadowsocks？</h5></div>
@@ -181,9 +171,19 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         VMess 拥有动态验证机制和更复杂的握手协议，相较于静态密钥的 Shadowsocks 安全性更高。它能有效抵御重放攻击和 DPI 检测，更适合长期使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>ShadowsocksR 支持哪些混淆插件？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的 WebSocket + TLS 配置有哪些优势？</h5></div>
     <div class="panel-body">
-        ShadowsocksR 提供多种混淆方式，如 tls1.2_ticket_auth、http_simple、random_head 等。它们通过模拟正常流量特征来规避防火墙检测，使通信更加隐蔽。    </div>
+        WebSocket + TLS 可以伪装成普通 HTTPS 流量，增强抗封锁能力。适合高封锁环境，结合域名伪装和策略组，可实现高安全性和稳定的网络访问体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
+    <div class="panel-body">
+        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan-go 如何启用 WebSocket 支持？</h5></div>
+    <div class="panel-body">
+        在配置文件中将 transport 参数设置为 websocket，并指定 path 路径。客户端需同步使用相同路径及主机名。这样可将 Trojan 流量伪装为普通 WebSocket 通信以提升隐蔽性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -231,16 +231,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-8-9.htm" title="免费Clash SSR - 8月9日21.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点节点订阅分享">免费Clash SSR - 8月9日21.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-12-free-high-speed-nodes.htm" title="免费Clash SSR - 8月12日22.5M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点节点订阅分享">免费Clash SSR - 8月12日22.5M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-4-free-high-speed-nodes.htm" title="免费Clash SSR - 8月4日21.1M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点/Trojan节点节点订阅分享">免费Clash SSR - 8月4日21.1M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点/Trojan节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-7.htm" title="免费Clash SSR - 8月7日19.4M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点订阅分享">免费Clash SSR - 8月7日19.4M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-5.htm" title="免费Clash SSR - 8月5日21.5M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点订阅分享">免费Clash SSR - 8月5日21.5M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-2026-8-19.htm" title="免费Clash SSR - 8月19日22.8M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Singbox节点节点订阅分享">免费Clash SSR - 8月19日22.8M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Singbox节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-18-free-high-speed-nodes.htm" title="免费Clash SSR - 8月18日19.9M/S|免费Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点节点订阅分享">免费Clash SSR - 8月18日19.9M/S|免费Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-17.htm" title="免费Clash SSR - 8月17日18.5M/S|免费Singbox节点/Trojan节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点节点订阅分享">免费Clash SSR - 8月17日18.5M/S|免费Singbox节点/Trojan节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-20-free-subscribe-node.htm" title="免费Clash SSR - 8月20日18.1M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点订阅分享">免费Clash SSR - 8月20日18.1M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-free-subscribe-node.htm" title="免费Clash SSR - 8月24日22.8M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点节点订阅分享">免费Clash SSR - 8月24日22.8M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-v2ray-subscribe.htm" title="免费Clash SSR - 8月28日19.8M/S|免费V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点节点订阅分享">免费Clash SSR - 8月28日19.8M/S|免费V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点节点订阅分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-31.htm" title="免费Clash SSR - 8月31日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点节点订阅分享">免费Clash SSR - 8月31日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-19-node-share-links.htm" title="免费Clash SSR - 7月19日18.4M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点订阅分享">免费Clash SSR - 7月19日18.4M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-23-clash-v2ray-ss-ssr.htm" title="免费Clash SSR - 7月23日18.8M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点订阅分享">免费Clash SSR - 7月23日18.8M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点订阅分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-v2ray-2026-8-13.htm" title="免费Clash SSR - 8月13日22.9M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点订阅分享">免费Clash SSR - 8月13日22.9M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-8-1.htm" title="免费Clash SSR - 8月1日21M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点订阅分享">免费Clash SSR - 8月1日21M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-10-free-v2ray-subscribe.htm" title="免费Clash SSR - 8月10日21.4M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点订阅分享">免费Clash SSR - 8月10日21.4M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-3.htm" title="免费Clash SSR - 9月3日21.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点节点订阅分享">免费Clash SSR - 9月3日21.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点节点订阅分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -252,10 +252,10 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
