@@ -295,22 +295,18 @@ A：不是。等级固然重要，但策略与时机判断在中低段位往往�
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-10-4-free-high-speed-nodes.htm">免费Clash SSR - 10月4日18.9M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点节点订阅分享</a></p>
+        <p>下一个：<a href="/free-nodes/2026-10-6-free-node-subscribe.htm">免费Clash SSR - 10月6日19.7M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点节点订阅分享</a></p>
     </div>
 <h4>FAQ</h4>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 的全局代理如何启用？</h5></div>
-    <div class="panel-body">
-        在 Mellow 中可通过开启 TUN 模式来启用全局代理。启用后，系统的所有流量都会经过代理转发，可实现全面科学上网。需注意系统防火墙可能会提示权限请求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的多策略组如何优化流量分配？</h5></div>
-    <div class="panel-body">
-        多策略组允许将节点按用途、延迟或地理位置分类，并结合规则文件自动分流流量。这样不同应用如游戏、视频和网页流量都能走最优节点，提高整体访问速度和稳定性。<hr />    </div>
-</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>当 V2Ray 报错 inbound 没有监听，可能是哪些配置问题？</h5></div>
     <div class="panel-body">
         检查 inbound 配置是否包含正确的 port、protocol 与 listen 字段；确认没有端口冲突或权限问题（非 root 绑定 1024 以下端口会失败）；查看日志中具体错误信息并根据提示修复配置。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何通过策略组实现多节点负载均衡？</h5></div>
+    <div class="panel-body">
+        Clash 支持策略组功能，可以根据节点延迟、地区或用途自动选择最佳节点处理流量，实现多节点负载均衡。有效提高访问速度和稳定性，保证网页浏览、视频播放和游戏流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的节点导入方式有哪些？</h5></div>
@@ -323,9 +319,9 @@ A：不是。等级固然重要，但策略与时机判断在中低段位往往�
         TAP 模式模拟以太网接口，适合游戏流量代理；TUN 模式则模拟 IP 层接口，更适合全局代理。根据用途不同可自由选择，但需管理员权限运行。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否支持 Vless？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 如何设置流量配额限制？</h5></div>
     <div class="panel-body">
-        目前 Potatso Lite 仅支持 Shadowsocks 和 Vmess 协议，不支持 Vless。但开发者正在逐步扩展功能，未来可能加入更多现代代理协议支持。<hr />    </div>
+        管理员可在 Hiddify Next 面板为每个用户设置流量上限或带宽限制。超过配额后可自动阻止或降速，保证服务器资源合理分配，防止单用户占用过多带宽。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的端口转发功能如何开启？</h5></div>
@@ -333,9 +329,14 @@ A：不是。等级固然重要，但策略与时机判断在中低段位往往�
         在服务器端配置文件中启用 port_forwarding 参数并指定目标端口与地址。确保防火墙开放转发端口，客户端使用对应端口连接即可实现流量中继。此功能常用于内网穿透或端口复用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何通过策略组实现多节点负载均衡？</h5></div>
+    <div class="panel-heading"><h5>Mellow 的全局代理如何启用？</h5></div>
     <div class="panel-body">
-        Clash 支持策略组功能，可以根据节点延迟、地区或用途自动选择最佳节点处理流量，实现多节点负载均衡。有效提高访问速度和稳定性，保证网页浏览、视频播放和游戏流畅。<hr />    </div>
+        在 Mellow 中可通过开启 TUN 模式来启用全局代理。启用后，系统的所有流量都会经过代理转发，可实现全面科学上网。需注意系统防火墙可能会提示权限请求。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 是否支持 Vless？</h5></div>
+    <div class="panel-body">
+        目前 Potatso Lite 仅支持 Shadowsocks 和 Vmess 协议，不支持 Vless。但开发者正在逐步扩展功能，未来可能加入更多现代代理协议支持。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 支持测速功能吗？</h5></div>
@@ -343,9 +344,9 @@ A：不是。等级固然重要，但策略与时机判断在中低段位往往�
         支持。WinXray 提供节点延迟测速功能，可检测每个节点的响应时间与可用性。测速结果能帮助用户选择最快线路，也能排除无效或不稳定的节点，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何设置流量配额限制？</h5></div>
+    <div class="panel-heading"><h5>WinXray 的多策略组如何优化流量分配？</h5></div>
     <div class="panel-body">
-        管理员可在 Hiddify Next 面板为每个用户设置流量上限或带宽限制。超过配额后可自动阻止或降速，保证服务器资源合理分配，防止单用户占用过多带宽。    </div>
+        多策略组允许将节点按用途、延迟或地理位置分类，并结合规则文件自动分流流量。这样不同应用如游戏、视频和网页流量都能走最优节点，提高整体访问速度和稳定性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -393,16 +394,16 @@ A：不是。等级固然重要，但策略与时机判断在中低段位往往�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/free-v2ray-2026-9-5.htm" title="免费Clash SSR - 9月5日22.5M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点节点订阅分享">免费Clash SSR - 9月5日22.5M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-21.htm" title="免费Clash SSR - 9月21日21.6M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点订阅分享">免费Clash SSR - 9月21日21.6M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-free-v2ray-subscribe.htm" title="免费Clash SSR - 9月2日20.1M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点订阅分享">免费Clash SSR - 9月2日20.1M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-23.htm" title="免费Clash SSR - 9月23日20.1M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点节点订阅分享">免费Clash SSR - 9月23日20.1M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-15.htm" title="免费Clash SSR - 9月15日21.9M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点订阅分享">免费Clash SSR - 9月15日21.9M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-6-free-subscribe-node.htm" title="免费Clash SSR - 9月6日19.6M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点订阅分享">免费Clash SSR - 9月6日19.6M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点订阅分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-1.htm" title="免费Clash SSR - 10月1日22M/S|免费V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点节点订阅分享">免费Clash SSR - 10月1日22M/S|免费V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/Clash节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-4-free-subscribe-node.htm" title="免费Clash SSR - 9月4日19.9M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点订阅分享">免费Clash SSR - 9月4日19.9M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-27.htm" title="免费Clash SSR - 9月27日19.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点节点订阅分享">免费Clash SSR - 9月27日19.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-4-free-high-speed-nodes.htm" title="免费Clash SSR - 10月4日18.9M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点节点订阅分享">免费Clash SSR - 10月4日18.9M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-18-node-share.htm" title="免费Clash SSR - 9月18日22.7M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点节点订阅分享">免费Clash SSR - 9月18日22.7M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-free-v2ray-subscribe.htm" title="免费Clash SSR - 9月2日20.1M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点订阅分享">免费Clash SSR - 9月2日20.1M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-6-free-node-subscribe.htm" title="免费Clash SSR - 10月6日19.7M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点节点订阅分享">免费Clash SSR - 10月6日19.7M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-10-7.htm" title="免费Clash SSR - 10月7日22.9M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点节点订阅分享">免费Clash SSR - 10月7日22.9M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点节点订阅分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-3.htm" title="免费Clash SSR - 9月3日21.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点节点订阅分享">免费Clash SSR - 9月3日21.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-19.htm" title="免费Clash SSR - 9月19日22.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点节点订阅分享">免费Clash SSR - 9月19日22.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-27.htm" title="免费Clash SSR - 9月27日19.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点节点订阅分享">免费Clash SSR - 9月27日19.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-23.htm" title="免费Clash SSR - 9月23日20.1M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点节点订阅分享">免费Clash SSR - 9月23日20.1M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点节点订阅分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -414,7 +415,7 @@ A：不是。等级固然重要，但策略与时机判断在中低段位往往�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">5</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">12</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
